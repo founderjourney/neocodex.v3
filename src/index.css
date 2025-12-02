@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white font-inter;
+  }
+}
+
+@layer components {
+  .matrix-font {
+    font-family: 'Orbitron', monospace;
+  }
+
+  .matrix-glow {
+    text-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 30px #00FF41;
+  }
+
+  .matrix-border {
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3), inset 0 0 10px rgba(0, 255, 65, 0.1);
+  }
+
+  .matrix-bg {
+    background: linear-gradient(135deg, rgba(0, 255, 65, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  }
+
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-neogreen to-green-400 text-black font-bold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-neogreen/50;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-neogreen text-neogreen font-bold rounded-lg transition-all duration-300 hover:bg-neogreen hover:text-black;
+  }
+
+  .card {
+    @apply p-6 sm:p-8 bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-xl border border-gray-700 transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply border-neogreen/50 scale-105;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight;
+  }
+
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-gradient-neogreen {
+    @apply bg-gradient-to-r from-neogreen to-green-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent;
+  }
+}
+
+/* Matrix Rain Animation Background */
+.matrix-rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.matrix-rain-column {
+  position: absolute;
+  top: -100%;
+  font-family: 'Orbitron', monospace;
+  font-size: 14px;
+  color: #00FF41;
+  text-shadow: 0 0 5px #00FF41;
+  animation: matrix-fall linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes matrix-fall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00FF41;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc34;
+}
