@@ -5,8 +5,12 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-black text-white font-inter;
+  html, body {
+    @apply bg-black text-white font-inter overflow-x-hidden;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 }
 

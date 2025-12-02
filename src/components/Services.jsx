@@ -175,21 +175,21 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="relative z-10 container-custom">
+      <div className="relative z-10 container-custom px-4">
         {/* Section header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 px-2">
           <h2 className="section-title">
             Elige tu <span className="text-neogreen matrix-glow">nivel de acceso</span> al código
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-neogreen to-primary mx-auto mb-8"></div>
-          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
             Desde una primera consulta gratuita hasta una transformación completa de 9 semanas.
             Cada nivel te acerca más a tu verdadero potencial.
           </p>
         </div>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 mb-12">
           {services.map((service, index) => (
             <ServiceCard key={index} service={service} index={index} />
           ))}
