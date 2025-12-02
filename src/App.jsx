@@ -1,7 +1,9 @@
 import Hero from './components/Hero';
 import Problem from './components/Problem';
 import Solution from './components/Solution';
-import Services from './components/Services';
+import CodigoExpress from './components/CodigoExpress';
+import LecturaIkigai from './components/LecturaIkigai';
+import OrientacionProfesional from './components/OrientacionProfesional';
 import Testimonials from './components/Testimonials';
 import Offer from './components/Offer';
 import Guarantee from './components/Guarantee';
@@ -15,7 +17,9 @@ function App() {
       <Hero />
       <Problem />
       <Solution />
-      <Services />
+      <CodigoExpress />
+      <LecturaIkigai />
+      <OrientacionProfesional />
       <Testimonials />
       <Offer />
       <Guarantee />
