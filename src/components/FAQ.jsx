@@ -126,7 +126,12 @@ const FAQ = () => {
               Nuestro equipo de soporte está disponible 24/7 para resolver cualquier duda
               adicional.
             </p>
-            <button className="btn-secondary">Contactar Soporte</button>
+            <button
+              onClick={() => document.getElementById('cta-final').scrollIntoView({ behavior: 'smooth' })}
+              className="btn-secondary"
+            >
+              Contactar Soporte
+            </button>
           </div>
         </div>
 

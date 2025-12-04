@@ -178,7 +178,10 @@ const LecturaIkigai = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <button className="btn-primary text-lg px-12 py-5 hover:scale-105 transition-transform shadow-lg shadow-neogreen/20">
+          <button
+            onClick={() => document.getElementById('cta-final').scrollIntoView({ behavior: 'smooth' })}
+            className="btn-primary text-lg px-12 py-5 hover:scale-105 transition-transform shadow-lg shadow-neogreen/20"
+          >
             COMENZAR MI VIAJE IKIGAI
           </button>
           <p className="text-gray-500 text-sm mt-4">3 sesiones de transformación personal</p>

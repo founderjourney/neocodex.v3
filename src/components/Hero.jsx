@@ -118,7 +118,10 @@ const Hero = () => {
 
         {/* CTA Button */}
         <div className="mb-12 px-4">
-          <button className="btn-primary text-base sm:text-xl md:text-2xl px-6 sm:px-10 py-4 sm:py-5 matrix-border w-full sm:w-auto">
+          <button
+            onClick={() => document.getElementById('cta-final').scrollIntoView({ behavior: 'smooth' })}
+            className="btn-primary text-base sm:text-xl md:text-2xl px-6 sm:px-10 py-4 sm:py-5 matrix-border w-full sm:w-auto"
+          >
             DESCIFRA TU CÓDIGO AHORA
           </button>
         </div>

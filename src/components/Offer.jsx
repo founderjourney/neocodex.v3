@@ -1,42 +1,24 @@
 const packageItems = [
   {
-    icon: '🔬',
-    title: 'Análisis Numerológico Profundo',
-    description: 'Decodificación completa de tu fecha de nacimiento y nombre.',
-    value: '$297',
+    icon: '🧬',
+    title: 'Lectura IKIGAI',
+    description: '3 sesiones: Lectura Numerológica Completa + Coaching + Mapa de Guía personalizado.',
+    value: '$70',
   },
   {
-    icon: '🚀',
-    title: 'Guía de Activación de Potenciales',
-    description: 'Ejercicios y conciencia aplicada para activar tus dones ocultos.',
-    value: '$197',
-  },
-  {
-    icon: '🗺️',
-    title: 'Mapa de Ciclos de Vida',
-    description: 'Un plan claro para navegar los desafíos y oportunidades de tus ciclos personales.',
-    value: '$247',
-  },
-  {
-    icon: '💬',
-    title: 'Sesión de Coaching',
-    description: 'Una sesión personalizada para resolver dudas y trazar tu ruta de acción.',
-    value: '$197',
+    icon: '💼',
+    title: 'Orientación Profesional',
+    description: 'Lectura rápida para descubrir carreras afines y tu camino profesional ideal.',
+    value: '$50',
   },
 ];
 
 const bonuses = [
   {
-    icon: '🎁',
-    title: 'BONUS: Manual Matrix Personal',
-    description: 'Guía completa para mantener tu programación actualizada',
-    value: '+$97',
-  },
-  {
-    icon: '📱',
-    title: 'BONUS: App de Seguimiento',
-    description: 'Aplicación para monitorear tus ciclos y sincronías diarias',
-    value: '+$127',
+    icon: '⚡',
+    title: 'BONUS: Código Express',
+    description: '2 preguntas rápidas con respuestas directas basadas en tu código numerológico.',
+    value: '+$47',
   },
 ];
 
@@ -128,14 +110,14 @@ const Offer = () => {
             <div className="bg-gradient-to-r from-gray-900 to-black p-6 md:p-8 text-center border-t border-neogreen/30">
               <div className="mb-4">
                 <div className="text-gray-400 mb-2">VALOR TOTAL NORMAL:</div>
-                <div className="text-3xl font-bold text-gray-500 line-through">$1,162</div>
+                <div className="text-3xl font-bold text-gray-500 line-through">$167</div>
                 <div className="text-sm text-gray-500">Precio individual de todos los componentes</div>
               </div>
 
               <div className="mb-6">
                 <div className="text-neogreen text-sm font-bold mb-2">PRECIO ESPECIAL HOY</div>
-                <div className="text-6xl font-black text-neogreen matrix-glow">$297</div>
-                <div className="text-yellow-400 font-semibold mt-2">Ahorro de $865</div>
+                <div className="text-6xl font-black text-neogreen matrix-glow">$97</div>
+                <div className="text-yellow-400 font-semibold mt-2">Ahorro de $70</div>
               </div>
 
               {/* Countdown placeholder */}
@@ -144,7 +126,10 @@ const Offer = () => {
               </div>
 
               {/* CTA */}
-              <button className="w-full max-w-md mx-auto block px-8 py-5 bg-gradient-to-r from-neogreen to-green-400 text-black font-black text-xl rounded-xl matrix-border hover:shadow-2xl hover:shadow-neogreen/50 transition-all duration-300 transform hover:scale-105">
+              <button
+                onClick={() => document.getElementById('cta-final').scrollIntoView({ behavior: 'smooth' })}
+                className="w-full max-w-md mx-auto block px-8 py-5 bg-gradient-to-r from-neogreen to-green-400 text-black font-black text-xl rounded-xl matrix-border hover:shadow-2xl hover:shadow-neogreen/50 transition-all duration-300 transform hover:scale-105"
+              >
                 🚀 SÍ, QUIERO DESCUBRIR MI CÓDIGO AHORA
               </button>
 

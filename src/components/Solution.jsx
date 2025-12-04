@@ -210,7 +210,10 @@ const Solution = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <button className="btn-primary text-lg sm:text-xl matrix-border">
+          <button
+            onClick={() => document.getElementById('cta-final').scrollIntoView({ behavior: 'smooth' })}
+            className="btn-primary text-lg sm:text-xl matrix-border"
+          >
             🔓 QUIERO DESCIFRAR MI CÓDIGO
           </button>
         </div>

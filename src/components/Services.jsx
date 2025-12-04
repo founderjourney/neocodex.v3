@@ -2,90 +2,54 @@ const services = [
   {
     icon: '⚡',
     name: 'Código Express',
-    tagline: 'Tu primer contacto con la Matrix',
-    price: 'GRATIS',
-    originalPrice: null,
-    duration: '20 min',
+    tagline: '2 preguntas rápidas',
+    price: '$47',
+    originalPrice: '$97',
+    duration: 'Respuesta inmediata',
     features: [
-      '3 preguntas sobre tu vida',
-      'Respuestas reveladoras inmediatas',
-      'Primer vistazo a tu código',
+      '2 preguntas específicas',
+      'Respuestas directas y claras',
+      'Basada en tu código numerológico',
+      'Ideal para dudas puntuales',
     ],
-    cta: 'ACCEDER GRATIS',
+    cta: 'OBTENER MI CÓDIGO EXPRESS',
     highlight: false,
     color: 'neogreen',
   },
   {
-    icon: '🧮',
-    name: 'Deep Scan',
-    tagline: 'Análisis intermedio en PDF',
-    price: '$47',
-    originalPrice: '$97',
-    duration: 'Entrega 24h',
+    icon: '🧬',
+    name: 'Lectura IKIGAI',
+    tagline: '3 sesiones de transformación',
+    price: '$297',
+    originalPrice: '$497',
+    duration: '3 sesiones',
     features: [
-      'Guía PDF personalizada',
-      'Tus números arquetípicos',
-      'Mapa de ciclos básico',
-      'Recomendaciones iniciales',
+      'Lectura Numerológica Completa + PDF',
+      'Sesión de Coaching personalizada',
+      'Mapa de Guía y trazabilidad',
+      'Descubre talentos y propósito',
+      'Misión de vida revelada',
     ],
-    cta: 'OBTENER MI PDF',
-    highlight: false,
-    color: 'primary',
-  },
-  {
-    icon: '🔓',
-    name: 'Source Code',
-    tagline: 'Lectura completa + grabación',
-    price: '$147',
-    originalPrice: '$297',
-    duration: '90 min en vivo',
-    features: [
-      'Sesión 1:1 en vivo',
-      'Decodificación completa',
-      'Grabación de la sesión',
-      'Análisis de compatibilidades',
-      'Plan de acción personalizado',
-    ],
-    cta: 'RESERVAR SESIÓN',
+    cta: 'COMENZAR MI VIAJE IKIGAI',
     highlight: true,
     color: 'neogreen',
   },
   {
     icon: '💼',
-    name: 'Career Code',
-    tagline: 'Orientación profesional numerológica',
-    price: '$197',
-    originalPrice: '$397',
-    duration: '2 sesiones',
+    name: 'Orientación Profesional',
+    tagline: 'Lectura rápida vocacional',
+    price: '$97',
+    originalPrice: '$197',
+    duration: 'Lectura rápida',
     features: [
-      'Análisis vocacional profundo',
-      'Números de carrera y dinero',
-      'Momentos óptimos para negocios',
-      'Compatibilidad con socios',
-      'Estrategia de éxito personal',
+      'Carreras afines a tu código',
+      'Áreas de especialización',
+      'Fortalezas laborales',
+      'Ideal para cambios de carrera',
     ],
-    cta: 'DESCUBRIR MI CARRERA',
+    cta: 'DESCUBRIR MI CAMINO',
     highlight: false,
     color: 'primary',
-  },
-  {
-    icon: '🔺',
-    name: 'The Pyramid Codes',
-    tagline: 'Programa premium de 9 pirámides',
-    price: '$497',
-    originalPrice: '$997',
-    duration: '9 semanas',
-    features: [
-      'Programa completo de transformación',
-      '9 pirámides numerológicas',
-      'Sesiones semanales en vivo',
-      'Comunidad exclusiva',
-      'Certificado de completación',
-      'Acceso de por vida al material',
-    ],
-    cta: 'TRANSFORMAR MI VIDA',
-    highlight: false,
-    color: 'yellow',
   },
 ];
 
@@ -147,6 +111,7 @@ const ServiceCard = ({ service, index }) => {
 
       {/* CTA Button */}
       <button
+        onClick={() => document.getElementById('cta-final').scrollIntoView({ behavior: 'smooth' })}
         className={`w-full py-3 rounded-xl font-bold transition-all duration-300 ${
           service.highlight
             ? 'bg-gradient-to-r from-neogreen to-green-400 text-black hover:shadow-lg hover:shadow-neogreen/50'
@@ -183,13 +148,13 @@ const Services = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-neogreen to-primary mx-auto mb-8"></div>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            Desde una primera consulta gratuita hasta una transformación completa de 9 semanas.
+            Desde consultas rápidas hasta una transformación completa en 3 sesiones.
             Cada nivel te acerca más a tu verdadero potencial.
           </p>
         </div>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <ServiceCard key={index} service={service} index={index} />
           ))}
@@ -200,8 +165,9 @@ const Services = () => {
           <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 p-6 rounded-xl border border-neogreen/30 max-w-3xl mx-auto">
             <p className="text-gray-300">
               <span className="text-neogreen font-semibold">¿No sabes cuál elegir?</span> Empieza
-              con el <span className="text-neogreen">Código Express</span> gratis y descubre qué
-              nivel de decodificación necesitas.
+              con el <span className="text-neogreen">Código Express</span> para resolver tus dudas
+              puntuales o ve directo a la <span className="text-neogreen">Lectura IKIGAI</span> para
+              una transformación completa.
             </p>
           </div>
         </div>

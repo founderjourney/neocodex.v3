@@ -117,7 +117,10 @@ const OrientacionProfesional = () => {
 
             {/* CTA */}
             <div className="text-center">
-              <button className="btn-primary text-lg px-10 py-4 hover:scale-105 transition-transform">
+              <button
+                onClick={() => document.getElementById('cta-final').scrollIntoView({ behavior: 'smooth' })}
+                className="btn-primary text-lg px-10 py-4 hover:scale-105 transition-transform"
+              >
                 DESCUBRIR MI CAMINO PROFESIONAL
               </button>
             </div>

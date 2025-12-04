@@ -74,7 +74,7 @@ const Pricing = () => {
   const matrixRows = generateMatrixChars();
 
   return (
-    <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
+    <section id="cta-final" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
       {/* Animated matrix background */}
       <div className="absolute inset-0 opacity-10 overflow-hidden">
         <div className="matrix-font text-neogreen text-xs">
@@ -140,10 +140,10 @@ const Pricing = () => {
 
           {/* Price */}
           <div className="mb-8">
-            <div className="text-lg text-gray-400 line-through mb-2">Precio normal: $1,162</div>
-            <div className="text-6xl font-black text-neogreen matrix-glow mb-4">$297</div>
+            <div className="text-lg text-gray-400 line-through mb-2">Precio normal: $167</div>
+            <div className="text-6xl font-black text-neogreen matrix-glow mb-4">$97</div>
             <div className="text-lg text-yellow-400 font-semibold">
-              Ahorro total: $865 (74% de descuento)
+              Ahorro total: $70 (42% de descuento)
             </div>
           </div>
 
@@ -151,22 +151,27 @@ const Pricing = () => {
           <div className="grid md:grid-cols-3 gap-4 mb-8 text-sm">
             <div className="flex items-center justify-center space-x-2 text-gray-300">
               <span className="text-neogreen">✅</span>
-              <span>Análisis Completo</span>
+              <span>Lectura IKIGAI</span>
             </div>
             <div className="flex items-center justify-center space-x-2 text-gray-300">
               <span className="text-neogreen">✅</span>
-              <span>Sesión de Coaching</span>
+              <span>Orientación Profesional</span>
             </div>
-            <div className="flex items-center justify-center space-x-2 text-gray-300">
-              <span className="text-neogreen">✅</span>
-              <span>Garantía 60 días</span>
+            <div className="flex items-center justify-center space-x-2 text-yellow-400">
+              <span className="text-yellow-400">🎁</span>
+              <span>BONUS: Código Express</span>
             </div>
           </div>
 
           {/* CTA Button */}
-          <button className="w-full max-w-md mx-auto block px-8 py-6 bg-gradient-to-r from-neogreen to-green-400 text-black font-black text-2xl rounded-xl matrix-border hover:shadow-2xl hover:shadow-neogreen/50 transition-all duration-300 transform hover:scale-105 mb-6">
+          <a
+            href="https://wa.me/573165895763?text=Hola%2C%20quiero%20descubrir%20mi%20c%C3%B3digo%20con%20MatrixCode%20Numerology"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full max-w-md mx-auto block px-8 py-6 bg-gradient-to-r from-neogreen to-green-400 text-black font-black text-2xl rounded-xl matrix-border hover:shadow-2xl hover:shadow-neogreen/50 transition-all duration-300 transform hover:scale-105 mb-6 text-center"
+          >
             🚀 SÍ, QUIERO DESCUBRIR MI CÓDIGO AHORA
-          </button>
+          </a>
 
           {/* Trust badges */}
           <div className="text-sm text-gray-400 mb-4">
