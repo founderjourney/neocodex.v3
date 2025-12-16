@@ -16,7 +16,7 @@ const packageItems = [
 const bonuses = [
   {
     icon: '⚡',
-    title: 'BONUS: Código Express',
+    title: 'BONUS: Plan de acción',
     description: '2 preguntas rápidas con respuestas directas basadas en tu código numerológico.',
     value: '+$47',
   },

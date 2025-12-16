@@ -135,7 +135,7 @@ const Pricing = () => {
         {/* Pricing card */}
         <div className="bg-gradient-to-br from-neogreen/10 to-primary/10 p-6 sm:p-8 lg:p-12 rounded-2xl border-2 border-neogreen matrix-border mb-8 sm:mb-12 text-center max-w-4xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            🔓 DECODIFICACIÓN COMPLETA NEOCODEX101
+            🔓 DECODIFICACIÓN COMPLETA MATRIXCODE
           </h3>
 
           {/* Price */}
@@ -159,7 +159,7 @@ const Pricing = () => {
             </div>
             <div className="flex items-center justify-center space-x-2 text-yellow-400">
               <span className="text-yellow-400">🎁</span>
-              <span>BONUS: Código Express</span>
+              <span>BONUS: Plan de acción</span>
             </div>
           </div>
 
